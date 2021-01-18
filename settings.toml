@@ -1,0 +1,39 @@
+[default]
+# Path to the root (top folder) of your Virt-A-Mate directory (ALL "\" MUST BE "\\")
+VAM_ROOT = "C:\\VaM"
+
+# Target strings to find
+# EX: ['private static bool RemoveFile(string path)', 'return false']
+TARGETS = ['FileManagerSecure.DeleteFile']
+
+# logs all .cs files with target line to text file so you can go on F95
+# and give us a bunch of shit that we aren't going to look through because
+# most is there for legitimate reasons and you're just a scared dummy
+IDIOT_MODE = false
+
+
+[console_write]
+# Quickly examine the code and press defined key to mark as safe or not
+CONSOLE_WRITE = true
+# Number of lines printed before the target string
+PRE_LINES = 20
+# Number of lines printed after the target string
+POST_LINES = 20
+
+
+[file_write]
+# Write the .cs files to be examined externally
+FILE_WRITE = false
+# Directory to write .cs files (must exist && do not end with '\\')
+FILE_WRITE_DIR = "C:\\VaM"
+
+
+[colors]
+# Customize your console output
+line_numbers = "Fore.LIGHTWHITE_EX"
+# Sections of text before and after the target string
+pre_post = "Fore.LIGHTWHITE_EX"
+# Color of the target string
+target = "Fore.LIGHTWHITE_EX"
+
+# about here I realized I wasted the last hour of my life writing this script
